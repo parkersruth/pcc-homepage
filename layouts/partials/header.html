@@ -1,0 +1,23 @@
+<header>
+
+  <div class="title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></div>
+  <div class="subtitle">{{ .Site.Params.subtitle }}</div>
+
+	{{ $currentPage := . }}
+
+	{{ with .Site.Menus.main }}
+	<nav>
+		<ul class='navbar'>
+			{{ range . }}
+			<li class="navlink {{ if eq $currentPage.Name .Name }}imhere{{ end }}">
+        <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+      </li>
+			{{ end }}
+		</ul>
+	</nav>
+	{{ end }}
+
+</header>
+
+
+
