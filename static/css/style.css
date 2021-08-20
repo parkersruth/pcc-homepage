@@ -119,6 +119,9 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+.modules-block img {
+  margin: auto;
+}
 li.module {
   flex-grow: 1;
   flex-basis: 0;
@@ -163,9 +166,6 @@ li.module {
   .modules-block ul {
     display: block;
     max-width: 400px;
-    margin: auto;
-  }
-  .modules-block img {
     margin: auto;
   }
   li.module {
