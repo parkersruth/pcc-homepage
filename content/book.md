@@ -4,7 +4,7 @@ title: "Book"
 
 
 
-{{< image src="book-cover.png" class="right" >}} {{< /image >}}
+{{< image src="book-cover.jpg" class="right" >}} {{< /image >}}
 
 # Book
 
