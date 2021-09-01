@@ -1,5 +1,7 @@
 ---
 title: "Book"
+menu: "main"
+weight: 3
 ---
 
 

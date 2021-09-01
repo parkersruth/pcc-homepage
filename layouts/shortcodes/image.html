@@ -4,3 +4,6 @@
      class = '{{ if .Get "class" }}{{ .Get "class" }}{{ else }} inline {{ end }}'
      {{if .Get "height"}} height = {{ .Get "height" }} {{ end }}
      draggable = "false">
+{{if .Get "caption"}}
+<div class="caption">{{ .Get "caption" }}</div>
+{{ end }}

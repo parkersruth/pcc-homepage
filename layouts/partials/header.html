@@ -10,7 +10,24 @@
 		<ul class='navbar'>
 			{{ range . }}
 			<li class="navlink {{ if eq $currentPage.Name .Name }}imhere{{ end }}">
-        <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+        <a href="{{ .URL }}">
+          {{ .Name }}
+          {{ if .HasChildren}}&nbsp;<i class="fa fa-chevron-down"></i>{{ end }}
+          <!-- {{- if .HasChildren}}&nbsp;v{{- end}} -->
+        </a>
+      {{- if .HasChildren }}
+      <ul class="subnavbar">
+        {{- range .Children }}
+        <li class="navlink {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}imhere{{ end }}">
+          <a href="{{ .URL }}">
+            {{ .Name }}
+          </a>
+        </li>
+        {{- end }}
+      </ul>
+      {{- end }}
+
+
       </li>
 			{{ end }}
 		</ul>

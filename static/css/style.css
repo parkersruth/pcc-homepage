@@ -29,7 +29,7 @@ body {
 }
 
 .navbar {
-	list-style-type: none;
+	list-style: none;
 	overflow: hidden;
 	display: flex;
 	flex-wrap: wrap;
@@ -64,8 +64,25 @@ body {
 }
 .imhere a, .navlink a:hover {
 	color: #ffffff;
-	/* background-color: var(--happy-blue); */
 	background-color: var(--happy-blue-dark);
+}
+
+.subnavbar {
+  background-color: #f0f0f0;
+	list-style-type: none;
+  animation-duration: 1s;
+  transition: 1s;
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+  position: absolute;
+}
+.navlink:hover .subnavbar {
+  animation-duration: 1s;
+  transition: 1s;
+  visibility: visible;
+  display: flex;
+  opacity: 1;
 }
 
 .title, .subtitle {
@@ -210,6 +227,13 @@ img {
   border-radius: 10px;
 }
 
+.caption {
+  color: #888888;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
 a {
   color: var(--happy-blue-dark);
   text-decoration: none;
@@ -274,6 +298,8 @@ img.display {
   max-height: 50vh;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
   /* margin-bottom: 25px; */
 }
 img.display-half {
