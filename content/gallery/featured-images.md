@@ -18,7 +18,7 @@ Here are some photos of paper cup constructions sent in by members of the commun
 
 {{< image src="featured-13.jpg" caption="Ellie, Anthony, Alexandra, Melissa, and Arpit" class="display" >}}Paper cup construction{{</ image >}}
 
-{{< image src="featured-12.jpg" caption="Chijoke, Mahlet, Ignacio, and Gabrielle" class="display" >}}Paper cup construction{{</ image >}}
+{{< image src="featured-12.jpg" caption="Chijoke, Ignacio, Mahlet, and Gabrielle" class="display" >}}Paper cup construction{{</ image >}}
 
 {{< image src="featured-11.jpg" caption="Daniel Feezell (13)" class="display" >}}Paper cup construction{{</ image >}}
 
